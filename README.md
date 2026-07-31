@@ -1,4 +1,4 @@
-# EDRXDR Dashboard — Intelligent Threat Detection Pipeline
+# EDRXDR Dashboard Intelligent Threat Detection Pipeline
 
 โปรเจกต์นี้คือระบบ SIEM (Security Information and Event Management) ที่ผสานการทำงานของ AI (Local LLM) เข้ามาช่วยวิเคราะห์และแจ้งเตือนภัยคุกคาม (Threat Detection & Compliance) สำหรับการจำลองและศึกษาการรับมือภัยคุกคามทางไซเบอร์
 
